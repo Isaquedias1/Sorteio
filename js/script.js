@@ -83,3 +83,14 @@ function msg(texto){
     avisos.innerHTML = `<h1>${texto}</h1>`
 
 }
+
+function fimJogo(){
+    jogada.value = ''
+    jogada.setAttribute('disabled' , '')
+    submit.setAttribute('disabled' , '')
+    p.classList.add('button') //ADICIONE UM ESTILO PARA O BOTÃO
+    p.innerHTML = '<h2 id="iniciarJogada">Iniciar o jogo</h2>'
+    recomecar.appendChild(p)
+    playGame= false;
+    iniciarJogo()
+}

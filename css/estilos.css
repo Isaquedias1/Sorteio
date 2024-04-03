@@ -17,6 +17,16 @@ body{
     padding:7px;
 }
 
+button{
+    background-color: rgb(208, 83, 208);
+    color:white;
+    width:250px;
+    height:50px;
+    border-radius:50px;
+    font-size:30px;
+    border-style:30px;
+}
+
 #jogar{
     background-color:orchid;
     color:white;
