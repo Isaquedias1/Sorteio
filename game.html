@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Trabalho feito pela dupla Nicollas e Isaque-->
+    <meta charset="UTF-8">
+    <title>Jogo da advinhação</title>
+    <link href="./css/estilos.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Jogo da advinhação</h1>
+    <p>Tente advinhar um número entre 1 e 100</p>
+    <p>Você tem 6 chances para acertar</p>
+    <br>
+    <div id="envelope">
+        <form action="" class="formulario">
+            <label for ="txtNumero" id="labelNumero"> Adivinhe o número</label>
+            <input type="text" id="txtNumero" class="adivinha">
+            <input type="submit" id="jogar" value="Jogar número" class="jogarNumero">
+        </form>
+        <div class="resultados">
+            <p>Jogadas anteriores: <span class="vezes"></span></p> 
+            <p>Jogadas restantes: <span class="numChances">6</span></p>
+            <p class="avisos"></p>
+        </div>
+    </div> <!--fechando div envelope-->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
