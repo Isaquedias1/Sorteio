@@ -1,7 +1,7 @@
 body{
     font-family:verdana,arial;
     width:50%;
-    background-color:rgba(214, 199, 36, 0.816);
+    background-color:rgba(65, 200, 103, 0.816);
     margin:0 auto;
     max-width:750px;
     min-width:480px;
@@ -57,16 +57,18 @@ button{
     box-sizing:border-box;
     text-align:center;
     width:750px;
-    height:550px;
+    height:430px;
     background-color:skyblue;
     color:white;
+    border-radius:50px;
 }
 
 h1{
-    background-color:skyblue;
+    background-color:rgb(37, 165, 216);
     color:white;
     width:750px;
     text-align:center;
+    border-radius:50px;
 }
 
 p{

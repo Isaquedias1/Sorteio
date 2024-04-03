@@ -41,6 +41,12 @@ function validaChances(tentativa){
         jogada.focus()
     }
 
+    else if(numerosJogados.includes(tentativa)){
+        alert('Atenção! O seguinte número já foi jogado.')
+        jogada.value = ''
+        jogada.focus()
+    }
+
     else{
         numerosJogados.push(tentativa) //EMPURRANDO UM ELEMENTO PARA O VETOR
         if (minhasJogadas === 6 && tentativa !== randomNumber){
@@ -93,4 +99,14 @@ function fimJogo(){
     recomecar.appendChild(p)
     playGame= false
     iniciarJogo()
+}
+
+function iniciarJogo(){
+    const botaoIniciar = document.querySelector ('iniciarJogada')
+    botaoIniciar.addEventListener ('click', function(){
+        randomNumber = parseInt(Math.random()*100+1)
+        numerosJogados = []
+        minhasJogadas = 1 
+        jogadaAnterior = ''
+    })
 }
