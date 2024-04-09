@@ -78,7 +78,7 @@ function checarTentativas(tentativa){
 }
 
 function displayTentativas(tentativa){
-    jogada.valeu = ''
+    jogada.value = ''
     jogada.focus()
     jogadaAnterior.innerHTML += `${tentativa}, `
     minhasJogadas++
